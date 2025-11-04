@@ -41,6 +41,6 @@ car1.showDetails();
 // this keyword - should run inside the code
 
 
-Prototype method -- shared method
+// Prototype method -- shared method
 
 // class - blueprint for object 
