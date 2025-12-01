@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Fade</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 120px;
+            background: skyblue;
+            display: none;   /* Initially hidden for fadeIn */
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="fadeInBtn">Fade In</button>
+<button id="fadeOutBtn">Fade Out</button>
+<button id="toggleBtn">Toggle Fade</button>
+
+<div id="box">Hello!</div>
+
+<script>
+    $(document).ready(function () {
+
+        $("#fadeInBtn").click(function () {
+            $("#box").fadeIn(1000);   // 1 second
+        });
+
+        $("#fadeOutBtn").click(function () {
+            $("#box").fadeOut(1000);
+        });
+
+        $("#toggleBtn").click(function () {
+            $("#box").fadeToggle(1000);
+        });
+
+    }); 
+</script>
